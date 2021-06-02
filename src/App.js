@@ -1,13 +1,15 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import HomeScreen from './components/HomeScreen';
+import FetchDataProvider from './contexts/FetchDataProvider';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-    </div>
+    <Router>
+      <FetchDataProvider>
+        <Route path='/' component={HomeScreen} exact />
+      </FetchDataProvider>
+    </Router>
   );
 }
 
