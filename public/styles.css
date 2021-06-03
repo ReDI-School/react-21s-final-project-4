@@ -1,0 +1,15 @@
+body{
+    margin:0;
+    font-size: 2rem;
+}
+.homeScreen-header{
+    margin-top: 16px;
+}
+
+.toolbar{
+    background-color:#fff;
+}
+.typography{
+    color: #000;
+    font-size: 2rem;
+}

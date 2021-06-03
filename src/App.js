@@ -6,10 +6,13 @@ import FetchDataProvider from './contexts/FetchDataProvider';
 function App() {
   return (
     <Router>
-      <FetchDataProvider>
-        <Route path='/' component={HomeScreen} exact />
-      </FetchDataProvider>
+      <div>
+        <FetchDataProvider>
+          <Route path='/' component={HomeScreen} exact />
+        </FetchDataProvider>
+      </div>
     </Router>
+
   );
 }
 
