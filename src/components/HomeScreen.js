@@ -1,13 +1,25 @@
-import React, { useContext } from 'react';
-import { FetchDataContext } from '../contexts/FetchDataProvider';
+import React from 'react';
+import ResList from './ResList';
+import {Grid} from "@material-ui/core";
+import Header from './Header';
 
 const HomeScreen = () => {
-  const restaurants = useContext(FetchDataContext);
+  
 
   return (
-    <div>
-      <h1>HomeScreen</h1>
-    </div>
+    <Grid container direction="column" spacing={8}>
+      
+      <Grid item><Header /></Grid>
+      
+      <Grid item container>
+        <Grid item xs={false} sm={2}></Grid>
+        <Grid item xs={12} sm={8}><ResList /></Grid>
+        <Grid item xs={false} sm={2}></Grid>
+      </Grid>
+      
+      
+    
+    </Grid>
   );
 };
 
