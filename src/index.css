@@ -1,0 +1,8 @@
+.goback__link {
+  position: absolute;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #333;
+  background-color: #f4f4f4;
+  left: 30px;
+}
