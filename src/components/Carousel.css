@@ -1,0 +1,33 @@
+@keyframes slidein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: smooth;
+}
+
+.carousel__img {
+  min-width: 600px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 2px;
+  animation: slidein 0.2s ease-in;
+  scroll-behavior: smooth;
+}
+
+.carousel__arrow {
+  cursor: pointer;
+  margin: 20px;
+}
+
+.carousel__arrow:hover {
+  transform: scale(1.12);
+}
