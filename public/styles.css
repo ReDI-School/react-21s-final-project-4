@@ -1,15 +1,77 @@
+
 body{
     margin:0;
-    font-size: 2rem;
-}
-.homeScreen-header{
-    margin-top: 16px;
+    font-weight: 300;
+    font-size: 20px;
+    
 }
 
-.toolbar{
-    background-color:#fff;
+header {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./css/img/background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./css/img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
 }
-.typography{
-    color: #000;
-    font-size: 2rem;
+
+.hero-text-box {
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-90%, -50%);
 }
+
+h1
+ {
+    font-weight: 300;
+    text-transform: uppercase;
+    
+    color:white;
+}
+.home-header{
+    font-weight: 300;
+    color:#203647;
+}
+
+.btn:link,
+.btn:visited
+ {
+    display: inline-block;
+    padding: 10px 25px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #007CC7;
+    color: #007CC7;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #007CC7;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #203647;
+    color: #fff;
+}
+
+input{
+    width: 25%;
+    padding: 10px 30px;
+    font-weight: 300;
+    border-radius: 200px;
+    
+    border: 1px solid #007CC7;
+}
+*:focus {outline: none;}

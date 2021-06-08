@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
     root: {
       maxWidth: 345,
-      height: 320.85
+      height: 321
     },
     media: {
       height: 140,
@@ -28,10 +28,11 @@ function ResCard(props){
                 title="Contemplative Reptile"
                 />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
+                    
+                    <Typography gutterBottom variant="h6" component="h2">
                         {props.name}
                     </Typography>
-                    <Typography gutterBottom variant="h6"  component="h3">
+                    <Typography gutterBottom variant="body1"  component="h3">
                         ({props.cuisine} {props.type})
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
