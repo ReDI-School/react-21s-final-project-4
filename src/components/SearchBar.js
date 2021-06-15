@@ -7,10 +7,10 @@ function SearchBar() {
     function handleChange(event){
         const value = event.target.value;
         setSearch(value);
-        //console.log(search);
+        
     }
     return(
-        <input className="input" name='searchBar' onChange={handleChange} value={search} placeholder='Search by name / type'></input>
+        <input id="input" className="input" name='searchBar' onChange={handleChange} value={search} placeholder='Search by name / type'></input>
     );
 }
 

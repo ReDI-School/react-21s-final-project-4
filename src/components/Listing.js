@@ -1,6 +1,6 @@
 import { Grid } from "@material-ui/core";
 import React, { useContext } from "react";
-import { FetchDataContext } from "../contexts/FetchDataProvider";
+
 import { FilterDataContext } from '../contexts/FilterDataProvider';
 
 import AllRestaurants from "./AllRestaurants";
@@ -9,13 +9,14 @@ import PickupRestaurants from './PickupRestaurants';
 import OpenRestaurants from './OpenRestaurants';
 
 
-function Listing(){
-    const restaurants = useContext(FetchDataContext);
+
+function Listing(props){
+    
     const [filters] = useContext(FilterDataContext);
-        if(restaurants !== undefined)  {
+    const restaurants =props.restaurants;
             
             return(  
-                <Grid  container>
+                <Grid  container >
                     {!filters.delivery && !filters.pickup && !filters.open &&
                         <Grid item container >
                             <AllRestaurants restaurants={restaurants}/>
@@ -42,10 +43,8 @@ function Listing(){
                 
             )
         
-        }
-        else {
-            return(<h1>Loading....</h1>)
-        }
+        
+        
 }
     
 

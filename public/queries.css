@@ -1,0 +1,61 @@
+@media only screen and (max-width:1200px){
+
+}
+
+@media only screen and (max-width:1023px){
+    .log{
+        margin-left: 10px;
+    }
+    .main-nav li {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 1.4rem;
+    }
+    .hero-text-box {
+    
+        
+        
+        font-size: 1.5rem;
+        
+    }
+    .home-header{
+        font-size: 3rem;
+        
+    }
+
+}
+
+@media only screen and (max-width:767px){
+    .log{
+        margin-left: 10px;
+    }
+    .main-nav li {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+    .hero-text-box {
+    
+        
+        
+        font-size: 1.5rem;
+        
+    }
+    .home-header{
+        font-size: 2rem;
+        
+    }
+ 
+
+}
+
+@media only screen and (max-width:480px){
+    
+    
+    .main-nav li {
+        display: inline-block;
+        font-weight: 300;
+        font-size: 1rem;
+    }
+    
+}

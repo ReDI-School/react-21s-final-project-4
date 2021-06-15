@@ -1,6 +1,8 @@
 import React,{useContext} from 'react';
-import {createMuiTheme, Grid, ThemeProvider, Typography} from '@material-ui/core';
+import { Grid} from '@material-ui/core';
 import { FilterDataContext } from '../contexts/FilterDataProvider';
+import SearchBar from './SearchBar';
+import ListMapSwitch from './ListMApSwitch';
 
 function Header(){
     const [filter, setFilter] = useContext(FilterDataContext);
@@ -40,35 +42,45 @@ function Header(){
                 pickup:false
             })
         }
-        console.log(filter);
+       
     }
     return(
         
-        <Grid  item container >
+        <Grid  item container direction ="column" spacing={5}>
             
-            <Grid item xs={1}></Grid>
+        
+            <Grid item ></Grid>
             
-            <Grid item xs={5} >
-                <h1 className="home-header">Our restaurants in Berlin</h1>
-            </Grid>
-                    
-                <Grid item xs={5} container spacing={2} justify='flex-end' alignItems='center'>
-                    <Grid item>
-                        <a className="btn btn-ghost" name='delivery' onClick={handleClick} href='#home'>delivery</a>
+            <Grid item container>
+                <Grid item xs={4}></Grid>
+                <Grid item container xs={5} alignItems='center'>
+                    <Grid container alignContent='center'>
+                        <h1 className="home-header" id="home-header">Our restaurants in <em>Berlin</em> </h1>
                     </Grid>
-                    <Grid item>
-                        <a className="btn btn-ghost" name='open' onClick={handleClick} href='#home'>open</a>
-                    </Grid>
-                    <Grid item>
-                        <a className="btn btn-ghost" name='pickup' onClick={handleClick} href='#home'>pickup</a>
-                    </Grid>
-                    <Grid item>
-                    <a className="btn btn-ghost" name='all' onClick={handleClick} href='#home'>All</a>
-                    </Grid>
-
                 </Grid>
+                <Grid item xs={3}></Grid>
+            </Grid>
             
-                
+            <Grid item container spacing={5}>
+                <Grid item xs={1} ></Grid>
+                <Grid item container xs={12} sm={2} md={2} lg={3}><SearchBar/></Grid>
+                <Grid item xs={2} sm={6}  md={6} lg={5} container m={5} spacing={4} justify='flex-start'  alignItems='center'>
+                    <Grid item>
+                            <a className="btn btn-ghost" name='delivery' onClick={handleClick} href='#input'>delivery</a>
+                    </Grid>
+                    <Grid item>
+                            <a className="btn btn-ghost" name='open' onClick={handleClick} href='#input'>open</a>
+                    </Grid>
+                    <Grid item>
+                            <a className="btn btn-ghost" name='pickup' onClick={handleClick} href='#input'>pickup</a>
+                    </Grid>
+                    <Grid item>
+                        <a className="btn btn-ghost" name='all' onClick={handleClick} href='#input'>All</a>
+                    </Grid>
+                </Grid>
+                <Grid item container xs={11} md={2} lg={2} justify='flex-end' alignItems='center'><ListMapSwitch /></Grid>
+            </Grid>
+            
         </Grid>
        
     );

@@ -10,7 +10,7 @@ const Carousel = ({ images }) => {
   useEffect(() => {
     timer.current = setTimeout(() => {
       setImageCount(imageCount === images.length - 1 ? 0 : imageCount + 1);
-    }, 1000);
+    }, 1500);
     return () => {
       clearTimeout(timer.current);
     };
