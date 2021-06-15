@@ -1,8 +1,52 @@
+* {
+  font-style: oblique;
+}
+
 .goback__link {
-  position: absolute;
+  margin-left: 1.5rem;
   text-decoration: none;
-  padding: 10px 20px;
-  color: #333;
-  background-color: #f4f4f4;
-  left: 30px;
+  background-color: #f5ebeb;
+  border-radius: 5%;
+  padding: 1rem;
+  text-align: center;
+  line-height: 3.5rem;
+}
+span {
+  font-style: oblique;
+  font-size: 1.5rem;
+  color: black;
+  animation: blink 8s linear infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container {
+  background-color: #ece6e6;
+  border-radius: 5%;
+}
+
+.res-name {
+  margin-top: 1rem;
+  text-align: center;
+  font-style: oblique;
+  font-size: 2rem;
+}
+.description,
+.address {
+  text-align: center;
+  border-radius: 50%;
+  background-color: #d6d3d3;
+}
+.res-cuisine,
+.res-dietaryRestrictions,
+.res-formatted-address {
+  font-size: 1.2rem;
 }
