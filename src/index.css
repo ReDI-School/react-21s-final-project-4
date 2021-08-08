@@ -15,19 +15,8 @@ span {
   font-style: oblique;
   font-size: 1.5rem;
   color: black;
-  animation: blink 8s linear infinite;
 }
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+
 .container {
   background-color: #ece6e6;
   border-radius: 5%;
