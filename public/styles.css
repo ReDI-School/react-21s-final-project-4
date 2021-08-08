@@ -2,7 +2,6 @@ html {
   font-size: 62.5%;
 }
 body {
-  margin: 0;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   line-height: 1.5;
@@ -35,6 +34,7 @@ header {
   font-weight: 400;
   text-transform: uppercase;
   color: white;
+  padding: 10px;
 }
 
 em {
@@ -106,6 +106,7 @@ em {
   -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
   font-size: 1.6rem;
+  margin: 10px;
 }
 
 .btn-ghost:link,
@@ -132,6 +133,7 @@ input {
   padding: 12px 15px;
   font-weight: 300;
   border-radius: 200px;
+  margin: 10px;
 
   border: 1px solid #007cc7;
 }
@@ -178,6 +180,10 @@ input:focus {
 /* ------------------------------------- */
 
 /* styling the map card */
+.container {
+  margin: 0 auto;
+}
+
 .rating-container {
   position: relative;
   margin-bottom: 1.2rem;
